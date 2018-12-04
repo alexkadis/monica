@@ -134,6 +134,7 @@
                         </svg>
                        </span>
                   <span class="i {{ htmldir() == 'ltr' ? 'ml3' : 'mr3' }}">{{ $contact->description }}</span>
+                  <em>{{ $contact->job }}</em> @if($contact->company != "") at {{ $contact->company }} @endif
                  </a>
                 </li>
                @endforeach
@@ -165,6 +166,7 @@
                   </span>
 
                   <span class="i {{ htmldir() == 'ltr' ? 'ml3' : 'mr3' }}">{{ $contact->description }}</span>
+                  <em>{{ $contact->job }}</em> @if($contact->company != "") at {{ $contact->company }} @endif
                  </a>
                 </li>
 
