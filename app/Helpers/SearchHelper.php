@@ -25,7 +25,8 @@ class SearchHelper
             $search_term = $matches[2];
 
             $field = ContactFieldType::where('account_id', $accountId)
-                ->where('name', 'LIKE', $search_field)
+				->where('name', 'LIKE', $search_field)
+				->where('job', 'LIKE', $search_field)
                 ->first();
 
             $field_id = is_null($field) ? 0 : $field->id;
