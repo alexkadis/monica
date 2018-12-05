@@ -48,7 +48,8 @@ class Contact extends Model
         'last_name',
         'nickname',
         'description',
-        'job',
+		'job',
+		'company',
     ];
 
     // The list of columns we want the Searchable trait to select.

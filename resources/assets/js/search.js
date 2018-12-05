@@ -130,6 +130,7 @@ const HeaderSearch = Search(
         let html = '';
         
         results.forEach(function (result) {
+			console.log(result);
             // The span is styled to cover the whole <li>, providing a clickable area over the whole result.
             html += `
                 <li class="header-search-result">
